@@ -6,6 +6,7 @@
 from random import randintnum = randint(LOWER_LIMIT, UPPER_LIMIT)
 """
 from random import randint
+
 LOWER_LIMIT = 0
 UPPER_LIMIT = 1000
 count = 10
