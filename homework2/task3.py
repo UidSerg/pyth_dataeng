@@ -18,7 +18,7 @@ if len(parts2) != 2:
 else:
   drob1 = frac1.split(sep ='/')
   drob2 = frac2.split(sep ='/')
-  if (drob1[0].isdigit() and drob1[1].isdigit() and drob1[0].isdigit() and drob1[1].isdigit()):  #проверка на число в каждой части split
+  if (drob1[0].isdigit() and drob1[1].isdigit() and drob2[0].isdigit() and drob2[1].isdigit()):  #проверка на число в каждой части split
     chisl = int(drob1[0]) * int(drob2[1]) + int(drob2[0]) * int(drob1[1])
     znam = int(drob1[1]) * int(drob2[1])
     rezult = str(chisl) + '/' + str(znam)
