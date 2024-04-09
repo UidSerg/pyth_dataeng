@@ -7,7 +7,7 @@ from collections import Counter
 import re
 from os import path
 
-with open('text.txt', encoding='utf-8') as f:
+with open("text.txt", encoding="utf-8") as f:
     text = f.read()
 text = re.sub(r"[^a-zA-Z]", " ", text)
 new_text = text.split()
@@ -15,6 +15,7 @@ print(new_text)
 print(Counter(new_text).most_common()[:10])
 
 """
+
 text = input("Введите текст")
 text = text.lower().replace(",", "").replace(".", "").replace("!", "").replace("?", "").replace("'"," ") # удаляем знаки препинания
 new_text = text.split()
