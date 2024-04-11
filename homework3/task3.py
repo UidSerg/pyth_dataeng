@@ -11,7 +11,7 @@ with open("text.txt", encoding="utf-8") as f:
     text = f.read()
 text = re.sub(r"[^a-zA-Z]", " ", text)
 new_text = text.split()
-print(new_text)
+
 print(Counter(new_text).most_common()[:10])
 
 """
