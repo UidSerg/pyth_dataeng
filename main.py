@@ -1,4 +1,6 @@
-import seminar_6.task2
+import homework6
+import homework6.task2
 
 if __name__ == '__main__':
-    seminar_6.task2.guess_number(4,15,5)
+    print(homework6.task2.check_date("24.12.2000"))
+    

@@ -6,6 +6,7 @@ from datetime import datetime as dt
 from calendar import isleap
 from sys import argv
 
+__all__ = ['check_date']
 
 def check_date(date: str):
     try:

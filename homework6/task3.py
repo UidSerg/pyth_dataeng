@@ -7,21 +7,21 @@
          Если ферзи не бьют друг друга верните истину, а если бьют - ложь.
 """
 
-n = 8
-x = []
-y = []
-for i in range(n):
-    new_x, new_y = [int(s) for s in input().split()]
-    x.append(new_x)
-    y.append(new_y)
+__all__ = ['queens_shess']
 
-correct = True
-for i in range(n):
-    for j in range(i + 1, n):
-        if x[i] == x[j] or y[i] == y[j] or abs(x[i] - x[j]) == abs(y[i] - y[j]):
-            correct = False
+def queens_shess(queens):
+    for i in range(8):
+        for j in range(i + 1, 8):
+            # Проверяем, находятся ли два ферзя на одной и той же горизонтали, вертикали или диагонали
+            if queens[i][0] == queens[j][0] or \
+               queens[i][1] == queens[j][1] or \
+               abs(queens[i][0] - queens[j][0]) == abs(queens[i][1] - queens[j][1]):
+                return False
+    return True
 
-if correct:
-    print('NO')
-else:
-    print('YES')
+if __name__ == '__main__':
+  queens = [(1, 1), (2, 5), (3, 8), (4, 6), (5, 3), (6, 7), (7, 2), (8, 4)]
+  # [[1, 4], [3, 5], [8, 2], [5, 1], [7, 8], [6, 6], [4, 3], [2, 7]]
+  # [[8, 8], [1, 5], [6, 1], [4, 6], [2, 7], [5, 3], [7, 4], [3, 2]]
+  # [[5, 3], [3, 2], [8, 4], [2, 7], [4, 6], [6, 1], [1, 5], [7, 8]]
+  print(queens_shess(queens)) 
