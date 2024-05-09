@@ -2,17 +2,54 @@
     {
         "Name":"./homework8",
         "parents_dir":"",
-        "dir_size":3364,
+        "dir_size":3733,
         "dirs":[
             {
+                "file_pack":"file_pack",
                 "test_dir2_l1":"test_dir2_l1",
                 "test_dir_l1":"test_dir_l1"
             }
         ],
         "files":[
             {
+                "main.py":191,
                 "README.md":1105,
-                "task2.py":2259
+                "task2.py":2437
+            }
+        ]
+    },
+    {
+        "Name":"file_pack",
+        "parents_dir":"./homework8\\",
+        "dir_size":5610,
+        "dirs":[
+            {
+                "__pycache__":"__pycache__"
+            }
+        ],
+        "files":[
+            {
+                "csv2pickles.py":799,
+                "file_manager.py":2437,
+                "json_to_csv.py":542,
+                "json_to_pickle.py":761,
+                "README.md":207,
+                "to_json.py":864,
+                "__init__.py":0
+            }
+        ]
+    },
+    {
+        "Name":"__pycache__",
+        "parents_dir":"./homework8\\file_pack\\",
+        "dir_size":3925,
+        "dirs":[
+            {}
+        ],
+        "files":[
+            {
+                "file_manager.cpython-312.pyc":3768,
+                "__init__.cpython-312.pyc":157
             }
         ]
     },
