@@ -1,0 +1,5 @@
+"Name"	"parents_dir"	"dir_size"	"dirs"	"files"
+"./homework8"	""	3364	"[{'test_dir2_l1': 'test_dir2_l1', 'test_dir_l1': 'test_dir_l1'}]"	"[{'README.md': 1105, 'task2.py': 2259}]"
+"test_dir2_l1"	"./homework8\"	0	"[{}]"	"[{}]"
+"test_dir_l1"	"./homework8\"	0	"[{'test_dir_l2': 'test_dir_l2'}]"	"[{'test.txt': 0}]"
+"test_dir_l2"	"./homework8\test_dir_l1\"	9	"[{}]"	"[{'test2.txt': 9}]"
